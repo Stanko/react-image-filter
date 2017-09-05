@@ -1,0 +1,164 @@
+$main-color: #E9463F;
+
+@mixin md() {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+body {
+  background: #fdfdfd;
+  padding-bottom: 40px;
+}
+
+a,
+a:active,
+a:visited,
+a:focus {
+  color: $main-color;
+}
+
+a:hover {
+  color: darken($main-color, 20);
+}
+
+h2, h3 {
+  margin-top: 50px;
+  color: $main-color;
+}
+
+
+.Header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.Content {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+.ImageWrapper {
+  padding-bottom: percentage(8/12);
+  position: relative;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ImageFilter {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Controls {
+  margin: 20px 0;
+  font-size: 14px;
+
+  @include md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.Control {
+  padding: 4px 10px;
+  border: 1px solid #E1E1E8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  @include md {
+    -ms-flex-preferred-size: 19%;
+    flex-basis: 19%;
+    max-width: 19%;
+    width: 19%;
+  }
+
+  &:hover {
+    background: #F7F7F9;
+
+    ::-webkit-slider-runnable-track {
+      height: 16px;
+      background: #fff;
+    }
+  }
+}
+
+.Control-input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 16px;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.Control-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.Control-input:focus {
+  outline: none;
+
+  &::-webkit-slider-runnable-track {
+    height: 16px;
+  }
+}
+
+.Control-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  top: 50%;
+  height: 12px;
+  margin-top: -6px;
+  width: 32px;
+  border-radius: 5px;
+  background: $main-color;
+  cursor: pointer;
+}
+
+
+.Control-input::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  background: #F7F7F9;
+  border: none;
+  height: 8px;
+  border-radius: 5px;
+  border: 1px solid #E1E1E8;
+  transition: height 0.25s;
+}
+
+.btn {
+  margin-right: 5px;
+  background: #111;
+
+  &:hover {
+    background: darken($main-color, 20);
+  }
+
+  &:focus {
+    background: $main-color;
+    outline: none;
+  }
+}
