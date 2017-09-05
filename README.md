@@ -11,7 +11,7 @@ Component is written as ES module, so it will work with webpack and other module
 
 Check the [interactive demo](https://stanko.github.io/react-image-filter/).
 
-[![Interactive demo](filter.jpg)](https://stanko.github.io/react-image-filter/).
+[![Interactive demo](filter.jpg)](https://stanko.github.io/react-image-filter/)
 
 ## Quick start
 
