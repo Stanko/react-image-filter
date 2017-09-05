@@ -114,6 +114,7 @@ const Example = class extends React.Component {
           <ImageFilter
             // image={ 'https://amazingslider.com/wp-content/uploads/2012/12/dandelion.jpg' }
             image={ `https://source.unsplash.com/random/1200x800?time=${ key }` }
+            key={ key }
             // preserveAspectRatio='cover'
             // style={ { width: '100%', height: 300 } }
             filter={ applyFilter ? filter : NONE }
@@ -198,6 +199,7 @@ const Example = class extends React.Component {
         </div>
 
         <h4>Misc</h4>
+
         <button
           className='btn btn-sm'
           onClick={ this.handleToggleFilter }
@@ -210,6 +212,10 @@ const Example = class extends React.Component {
         >
           New image
         </button>
+
+        <div className='margin-bottom-20'>
+          <small>Please note that Unsplash will sometime return the same image.</small>
+        </div>
 
         <h4>Applied props</h4>
         { typeof filter === 'object' ?
