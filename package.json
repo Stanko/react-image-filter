@@ -42,6 +42,7 @@
     "react-dom": "^15.5.4",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
+    "uglify-js": "^2.8.29",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.2.1"
   },

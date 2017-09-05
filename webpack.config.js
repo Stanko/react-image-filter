@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-// const fs = require('fs');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -12,14 +11,11 @@ const isProduction = NODE_ENV === 'production';
 
 const distPath = path.join(__dirname, './dist');
 const exampleDistPath = path.join(__dirname, './dist-docs');
-// const imgPath = path.join(__dirname, './source/assets/img');
 const sourcePath = path.join(__dirname, './source');
 const docsPath = path.join(__dirname, './docs');
 
 const outputDistPath = isExample ? exampleDistPath : distPath;
 
-// const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-// const componentName = packageJson.name;
 
 // Common plugins
 const plugins = [
