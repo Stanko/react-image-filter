@@ -1,5 +1,8 @@
 # React Image Filter
 
+[![npm version](https://img.shields.io/npm/v/react-image-filter.svg?style=flat-square)](https://www.npmjs.com/package/react-image-filter)
+[![npm downloads](https://img.shields.io/npm/dm/react-image-filter.svg?style=flat-square)](https://www.npmjs.com/package/react-image-filter)
+
 Lightweight React component, for applying color filters on images,
 works in all modern browsers plus IE10+ and Edge.
 Made because CSS filters don't work in IE and Edge :(
