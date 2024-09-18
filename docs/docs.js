@@ -112,8 +112,7 @@ const Example = class extends React.Component {
       <div className='Content'>
         <div className='ImageWrapper'>
           <ImageFilter
-            // image={ 'https://amazingslider.com/wp-content/uploads/2012/12/dandelion.jpg' }
-            image={ `https://source.unsplash.com/random/1200x800?time=${ key }` }
+            image={ `https://picsum.photos/seed/${ key }/1200/800` }
             key={ key }
             // preserveAspectRatio='cover'
             // style={ { width: '100%', height: 300 } }
