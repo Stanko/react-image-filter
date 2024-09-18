@@ -73,42 +73,9 @@ h2, h3 {
       background: #fff; }
 
 .Control-input {
-  -webkit-appearance: none;
   width: 100%;
   height: 16px;
-  background: transparent;
-  padding: 0;
-  margin: 0; }
-
-.Control-input::-webkit-slider-thumb {
-  -webkit-appearance: none; }
-
-.Control-input:focus {
-  outline: none; }
-  .Control-input:focus::-webkit-slider-runnable-track {
-    height: 16px; }
-
-.Control-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  position: relative;
-  top: 50%;
-  height: 12px;
-  margin-top: -6px;
-  width: 32px;
-  border-radius: 5px;
-  background: #E9463F;
-  cursor: pointer; }
-
-.Control-input::-webkit-slider-runnable-track {
-  width: 100%;
-  cursor: pointer;
-  background: #F7F7F9;
-  border: none;
-  height: 8px;
-  border-radius: 5px;
-  border: 1px solid #E1E1E8;
-  transition: height 0.25s; }
+  accent-color: #E9463F; }
 
 .btn {
   margin-right: 5px;
