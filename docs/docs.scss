@@ -1,4 +1,4 @@
-$main-color: #E9463F;
+$main-color: #e9463f;
 
 @mixin md() {
   @media (min-width: 600px) {
@@ -28,11 +28,11 @@ a:hover {
   color: darken($main-color, 20);
 }
 
-h2, h3 {
+h2,
+h3 {
   margin-top: 50px;
   color: $main-color;
 }
-
 
 .Header {
   border-bottom: 1px solid #ddd;
@@ -82,7 +82,7 @@ h2, h3 {
 
 .Control {
   padding: 4px 10px;
-  border: 1px solid #E1E1E8;
+  border: 1px solid #e1e1e8;
   border-radius: 5px;
   margin-bottom: 10px;
 
@@ -94,12 +94,7 @@ h2, h3 {
   }
 
   &:hover {
-    background: #F7F7F9;
-
-    ::-webkit-slider-runnable-track {
-      height: 16px;
-      background: #fff;
-    }
+    background: #f7f7f9;
   }
 }
 
@@ -137,7 +132,6 @@ h2, h3 {
 //   background: $main-color;
 //   cursor: pointer;
 // }
-
 
 // .Control-input::-webkit-slider-runnable-track {
 //   width: 100%;
